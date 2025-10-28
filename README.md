@@ -20,14 +20,14 @@ This code implements a machine learning pipeline to predict tensile strength in 
 **● Comparison:** Analyzes performance with/without contact voltage measurement
 
 ## **File Structure**
-main_rsw_prediction.m              # Main execution script
-extract_rsw_features.m             # Feature extraction (Eq. 1-3 from paper)
-train_and_evaluate_model.m         # ML training and k-fold CV
-filter_features_by_pvalue.m        # Statistical significance testing
-visualize_results.m                # Generate plots (Fig. 6, 7 style)
-generate_synthetic_rsw_data.m      # Synthetic data generator (for testing)
-example_data_loading.m             # Examples for loading real data
-README.md                          # This file
+      main_rsw_prediction.m              # Main execution script
+      extract_rsw_features.m             # Feature extraction (Eq. 1-3 from paper)
+      train_and_evaluate_model.m         # ML training and k-fold CV
+      filter_features_by_pvalue.m        # Statistical significance testing
+      visualize_results.m                # Generate plots (Fig. 6, 7 style)
+      generate_synthetic_rsw_data.m      # Synthetic data generator (for testing)
+      example_data_loading.m             # Examples for loading real data
+      README.md                          # This file
 
 ## **Requirements**
 **Software**
