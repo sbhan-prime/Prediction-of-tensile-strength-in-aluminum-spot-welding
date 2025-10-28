@@ -47,7 +47,7 @@ For each weld specimen:
 
 ##### __● Contact voltage signal__ (measured at faying interface) ⭐ KEY CONTRIBUTION
 
-**2. Process Windows**
+### **2. Process Windows**
 
 ##### __● Preheating:__ 20 ms (1,000 samples at 50 kHz)
 
