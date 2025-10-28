@@ -38,7 +38,7 @@ This code implements a machine learning pipeline to predict tensile strength in 
 
 ### **Experimental Data Requirements**
 To use this code with your own data, you need:
-### **Time-Series Signals (50 kHz sampling rate)**
+### **1. Time-Series Signals (50 kHz sampling rate)**
 For each weld specimen:
 
 ##### __● Current signal__ (measured with Rogowski coil)
