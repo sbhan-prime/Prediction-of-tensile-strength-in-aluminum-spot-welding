@@ -2,7 +2,9 @@
 
 ## **Overview**
 This code implements a machine learning pipeline to predict tensile strength in aluminum resistance spot welding (RSW) based on monitored time-series signals. The key contribution is the inclusion of contact voltage measured at the faying interface, which significantly improves prediction accuracy (~30% reduction in RMSE compared to conventional methods).
-Features
+
+
+## **Features**
 
 Feature Extraction: Extracts 18 statistical features from time-series signals
 
