@@ -31,7 +31,9 @@ This code implements a machine learning pipeline to predict tensile strength in 
 
 ## **Requirements**
 **Software**
+
 ● MATLAB R2022b or later
+
 ● Statistics and Machine Learning Toolbox
 
 **Experimental Data Requirements**
