@@ -97,7 +97,7 @@ Visualization of weld cycles
 
 Expected Results
 Based on the paper, you should see:
-Model ConfigurationRMSEImprovementWithout CV (All features)Baseline-Without CV (P-filtered)Lower~10-15%With CV (All features)Lower~20-25%With CV (P-filtered)Lowest~30% ⭐
+Model ConfigurationRMSEImprovementWithout CV (All features)Baseline-Without CV (P-filtered)Lower 10-15%With CV (All features)Lower 20-25%With CV (P-filtered)Lowest~30% ⭐
 Key Findings (Table 3)
 Statistically significant features (p < 0.05):
 
