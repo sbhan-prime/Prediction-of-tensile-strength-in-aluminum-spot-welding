@@ -27,7 +27,7 @@ README.md                          # This file
 Requirements
 Software
 
-MATLAB R2020a or later
+MATLAB R2022b or later
 Statistics and Machine Learning Toolbox
 
 Experimental Data Requirements
