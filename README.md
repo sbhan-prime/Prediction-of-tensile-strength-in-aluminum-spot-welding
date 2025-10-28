@@ -49,11 +49,11 @@ For each weld specimen:
 
 **2. Process Windows**
 
-##### __●Preheating:__ 20 ms (1,000 samples at 50 kHz)
+##### __● Preheating:__ 20 ms (1,000 samples at 50 kHz)
 
-##### __●Cooling:__ 100 ms between preheating and welding
+##### __● Cooling:__ 100 ms between preheating and welding
 
-##### __●Welding:__ 50 ms (2,500 samples at 50 kHz)
+##### __● Welding:__ 50 ms (2,500 samples at 50 kHz)
 
 #### **3. Process Parameters**
 
