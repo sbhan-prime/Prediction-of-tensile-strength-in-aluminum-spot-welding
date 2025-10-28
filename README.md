@@ -8,9 +8,9 @@ This code implements a machine learning pipeline to predict tensile strength in 
 
 **● Feature Extraction:** Extracts 18 statistical features from time-series signals
 
-   ● 3 signals: Current, Voltage, Contact Voltage
-   ● 2 windows: Preheating, Welding
-   ● 3 statistics per signal: Maximum, Mean, Time-of-peak
+      ● 3 signals: Current, Voltage, Contact Voltage
+      ● 2 windows: Preheating, Welding
+      ● 3 statistics per signal: Maximum, Mean, Time-of-peak
 
 
 **● Statistical Analysis:** P-value based feature selection (p < 0.05)
