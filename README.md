@@ -41,19 +41,19 @@ To use this code with your own data, you need:
 **1. Time-Series Signals (50 kHz sampling rate)**
 For each weld specimen:
 
-### __● Current signal__ (measured with Rogowski coil)
+###### __● Current signal__ (measured with Rogowski coil)
 
-### __● Voltage signal__ (measured between electrodes)
+###### __● Voltage signal__ (measured between electrodes)
 
-### __● Contact voltage signal__ (measured at faying interface) ⭐ KEY CONTRIBUTION
+###### __● Contact voltage signal__ (measured at faying interface) ⭐ KEY CONTRIBUTION
 
 **2. Process Windows**
 
-### __●Preheating:__ 20 ms (1,000 samples at 50 kHz)
+###### __●Preheating:__ 20 ms (1,000 samples at 50 kHz)
 
-### __●Cooling:__ 100 ms between preheating and welding
+###### __●Cooling:__ 100 ms between preheating and welding
 
-### __●Welding:__ 50 ms (2,500 samples at 50 kHz)
+###### __●Welding:__ 50 ms (2,500 samples at 50 kHz)
 
 **3. Process Parameters (from Table 1)**
 
