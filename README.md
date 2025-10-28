@@ -58,8 +58,8 @@ For each weld specimen:
 #### **3. Process Parameters**
 
 Preheating current: 8-12 kA
-Welding current: 25-31 kA
-Electrode force: Variable (e.g., 3-5 kN)
+Welding current: 22-31 kA
+Electrode force: 300-500 kgf
 Preheating time: 20 ms (fixed)
 Welding time: 50 ms (fixed)
 Cooling time: 100 ms (fixed)
