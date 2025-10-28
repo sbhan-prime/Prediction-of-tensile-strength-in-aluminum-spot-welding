@@ -64,6 +64,6 @@ Cooling time: 100 ms (fixed)
 
 ### **4. Ground Truth**
 
-Tensile strength from mechanical testing (N)
+Tensile strength from mechanical testing (kgf)
 According to KS B 0854 standards
 Specimen size: 100 mm × 30 mm × 1 mm (thickness)
