@@ -6,18 +6,18 @@ This code implements a machine learning pipeline to predict tensile strength in 
 
 ## **Features**
 
-Feature Extraction: Extracts 18 statistical features from time-series signals
+**● Feature Extraction:** Extracts 18 statistical features from time-series signals
 
-3 signals: Current, Voltage, Contact Voltage
-2 windows: Preheating, Welding
-3 statistics per signal: Maximum, Mean, Time-of-peak
+● 3 signals: Current, Voltage, Contact Voltage
+● 2 windows: Preheating, Welding
+● 3 statistics per signal: Maximum, Mean, Time-of-peak
 
 
-Statistical Analysis: P-value based feature selection (p < 0.05)
-Machine Learning: Linear regression with 5-fold cross-validation
-Comparison: Analyzes performance with/without contact voltage measurement
+**● Statistical Analysis:** P-value based feature selection (p < 0.05)
+**● Machine Learning:** Linear regression with 5-fold cross-validation
+**● Comparison:** Analyzes performance with/without contact voltage measurement
 
-File Structure
+## **File Structure**
 main_rsw_prediction.m              # Main execution script
 extract_rsw_features.m             # Feature extraction (Eq. 1-3 from paper)
 train_and_evaluate_model.m         # ML training and k-fold CV
