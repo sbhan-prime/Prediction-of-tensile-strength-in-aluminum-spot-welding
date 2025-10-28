@@ -25,8 +25,6 @@ This code implements a machine learning pipeline to predict tensile strength in 
       train_and_evaluate_model.m         # ML training and k-fold CV
       filter_features_by_pvalue.m        # Statistical significance testing
       visualize_results.m                # Generate plots
-      generate_synthetic_rsw_data.m      # Synthetic data generator
-      example_data_loading.m             # Examples for loading real data
       README.md                          # This file
 
 ## **Requirements**
