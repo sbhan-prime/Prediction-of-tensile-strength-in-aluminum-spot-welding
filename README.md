@@ -6,18 +6,18 @@ This code implements a machine learning pipeline to predict tensile strength in 
 
 ## **Features**
 
-### **● Feature Extraction:** Extracts 18 statistical features from time-series signals
+#### **● Feature Extraction:** Extracts 18 statistical features from time-series signals
 
       ● 3 signals: Current, Voltage, Contact Voltage
       ● 2 windows: Preheating, Welding
       ● 3 statistics per signal: Maximum, Mean, Time-of-peak
 
 
-**● Statistical Analysis:** P-value based feature selection (p < 0.05)
+#### **● Statistical Analysis:** P-value based feature selection (p < 0.05)
 
-**● Machine Learning:** Linear regression with 5-fold cross-validation
+#### **● Machine Learning:** Linear regression with 5-fold cross-validation
 
-**● Comparison:** Analyzes performance with/without contact voltage measurement
+#### **● Comparison:** Analyzes performance with/without contact voltage measurement
 
 ## **File Structure**
       main_rsw_prediction.m              # Main execution script
@@ -30,15 +30,15 @@ This code implements a machine learning pipeline to predict tensile strength in 
       README.md                          # This file
 
 ## **Requirements**
-### **Software**
+#### **Software**
 
 ● MATLAB R2022b or later
 
 ● Statistics and Machine Learning Toolbox
 
-**Experimental Data Requirements**
+#### **Experimental Data Requirements**
 To use this code with your own data, you need:
-**Time-Series Signals (50 kHz sampling rate)**
+#### **Time-Series Signals (50 kHz sampling rate)**
 For each weld specimen:
 
 ##### __● Current signal__ (measured with Rogowski coil)
@@ -55,7 +55,7 @@ For each weld specimen:
 
 ##### __●Welding:__ 50 ms (2,500 samples at 50 kHz)
 
-**3. Process Parameters (from Table 1)**
+#### **3. Process Parameters**
 
 Preheating current: 8-12 kA
 Welding current: 25-31 kA
@@ -64,7 +64,7 @@ Preheating time: 20 ms (fixed)
 Welding time: 50 ms (fixed)
 Cooling time: 100 ms (fixed)
 
-**4. Ground Truth**
+#### **4. Ground Truth**
 
 Tensile strength from mechanical testing (N)
 According to KS B 0854 standards
