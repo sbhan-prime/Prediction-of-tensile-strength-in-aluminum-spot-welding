@@ -6,7 +6,7 @@ This code implements a machine learning pipeline to predict tensile strength in 
 
 ## **Features**
 
-**● Feature Extraction:** Extracts 18 statistical features from time-series signals
+### **● Feature Extraction:** Extracts 18 statistical features from time-series signals
 
       ● 3 signals: Current, Voltage, Contact Voltage
       ● 2 windows: Preheating, Welding
@@ -30,7 +30,7 @@ This code implements a machine learning pipeline to predict tensile strength in 
       README.md                          # This file
 
 ## **Requirements**
-**Software**
+### **Software**
 
 ● MATLAB R2022b or later
 
