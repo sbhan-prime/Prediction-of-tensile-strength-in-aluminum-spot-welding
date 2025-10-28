@@ -22,25 +22,25 @@ config.k_fold = 5; % 5-fold cross-validation
 config.p_threshold = 0.05; % significance level
 config.dt = 1/config.sampling_rate; % 20 microseconds
 
-fprintf('==========================================================\n'); %[output:48a52212]
-fprintf('Aluminum RSW Tensile Strength Prediction using ML\n'); %[output:0bb0da7e]
-fprintf('==========================================================\n\n'); %[output:73cd25f1]
+fprintf('==========================================================\n');
+fprintf('Aluminum RSW Tensile Strength Prediction using ML\n');
+fprintf('==========================================================\n\n');
 
 %% Step 1: Load Raw Time-Series Data
-fprintf('Step 1: Loading raw time-series data...\n'); %[output:1693c062]
+fprintf('Step 1: Loading raw time-series data...\n');
 % Data should be in format: one row per weld
 % Columns: [preheating_current, welding_current, electrode_force, 
 %           current_signal, voltage_signal, contact_voltage_signal, 
 %           tensile_strength]
 % NOTE: User needs to provide actual data file
-data_file = 'rsw_raw_data.mat'; % User should provide this file
+data_file = 'rsw_raw_data_2.mat'; % User should provide this file
 
-if ~exist(data_file, 'file') %[output:group:07bacb27]
-    fprintf('Data file not found.'); %[output:2e7e6bf2]
-    [raw_data, ground_truth] = generate_synthetic_rsw_data(config); %[output:5eb71360]
+if ~exist(data_file, 'file')
+    fprintf('Data file not found.');
+    [raw_data, ground_truth] = generate_synthetic_rsw_data(config);
 else
     load(data_file, 'raw_data', 'ground_truth');
-end %[output:group:07bacb27]
+end
 
 num_samples = size(raw_data, 1);
 fprintf('  Loaded %d welding samples\n', num_samples);
@@ -141,27 +141,3 @@ visualize_results(results_wo_cv_all, results_wo_cv_filtered, ...
 
 fprintf('\nAnalysis complete!\n');
 fprintf('==========================================================\n');
-
-%[appendix]{"version":"1.0"}
-%---
-%[metadata:view]
-%   data: {"layout":"inline"}
-%---
-%[output:48a52212]
-%   data: {"dataType":"text","outputData":{"text":"==========================================================\n","truncated":false}}
-%---
-%[output:0bb0da7e]
-%   data: {"dataType":"text","outputData":{"text":"Aluminum RSW Tensile Strength Prediction using ML\n","truncated":false}}
-%---
-%[output:73cd25f1]
-%   data: {"dataType":"text","outputData":{"text":"==========================================================\n\n","truncated":false}}
-%---
-%[output:1693c062]
-%   data: {"dataType":"text","outputData":{"text":"Step 1: Loading raw time-series data...\n","truncated":false}}
-%---
-%[output:2e7e6bf2]
-%   data: {"dataType":"text","outputData":{"text":"Data file not found.","truncated":false}}
-%---
-%[output:5eb71360]
-%   data: {"dataType":"error","outputData":{"errorType":"runtime","text":"'generate_synthetic_rsw_data'은(는) 인식할 수 없는 함수 또는 변수입니다."}}
-%---
