@@ -1,0 +1,1 @@
+# Prediction-of-tensile-strength-in-aluminum-spot-welding
