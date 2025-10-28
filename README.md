@@ -26,28 +26,28 @@ visualize_results.m                # Generate plots (Fig. 6, 7 style)
 generate_synthetic_rsw_data.m      # Synthetic data generator (for testing)
 example_data_loading.m             # Examples for loading real data
 README.md                          # This file
-Requirements
-Software
 
-MATLAB R2022b or later
-Statistics and Machine Learning Toolbox
+## **Requirements**
+**Software**
+● MATLAB R2022b or later
+● Statistics and Machine Learning Toolbox
 
-Experimental Data Requirements
+**Experimental Data Requirements**
 To use this code with your own data, you need:
-1. Time-Series Signals (50 kHz sampling rate)
+**1. Time-Series Signals (50 kHz sampling rate)**
 For each weld specimen:
 
-Current signal (measured with Rogowski coil)
-Voltage signal (measured between electrodes)
-Contact voltage signal (measured at faying interface) ⭐ KEY CONTRIBUTION
+__● Current signal__ (measured with Rogowski coil)
+__● Voltage signal__ (measured between electrodes)
+__● Contact voltage signal__ (measured at faying interface) ⭐ KEY CONTRIBUTION
 
-2. Process Windows
+**2. Process Windows**
 
-Preheating: 20 ms (1,000 samples at 50 kHz)
-Cooling: 100 ms between preheating and welding
-Welding: 50 ms (2,500 samples at 50 kHz)
+__●Preheating:__ 20 ms (1,000 samples at 50 kHz)
+__●Cooling:__ 100 ms between preheating and welding
+__●Welding:__ 50 ms (2,500 samples at 50 kHz)
 
-3. Process Parameters (from Table 1)
+**3. Process Parameters (from Table 1)**
 
 Preheating current: 8-12 kA
 Welding current: 25-31 kA
@@ -56,13 +56,13 @@ Preheating time: 20 ms (fixed)
 Welding time: 50 ms (fixed)
 Cooling time: 100 ms (fixed)
 
-4. Ground Truth
+**4. Ground Truth**
 
 Tensile strength from mechanical testing (N)
 According to KS B 0854 standards
 Specimen size: 100 mm × 30 mm × 1 mm (thickness)
 
-Data Format
+##**Data Format**
 Your data should be structured as:
 matlab% raw_data: Cell array [N x 1]
 % Each cell contains a struct with:
@@ -75,13 +75,16 @@ raw_data{i}.weld_contact_voltage      % [2500 x 1] vector
 
 % ground_truth: [N x 1] vector of tensile strength values
 ground_truth(i)                       % Tensile strength in Newtons
-Usage
-Quick Start (with synthetic data)
-matlab% Run the main script - it will generate synthetic data if no real data exists
-main_rsw_prediction
-Using Your Own Data
 
-Prepare your data following the format above
+##**Usage**
+Quick Start (with synthetic data)
+matlab
+% Run the main script - it will generate synthetic data if no real data exists
+main_rsw_prediction
+
+**Using Your Own Data**
+
+**1. Prepare your data following the format above**
 Save to MAT file:
 
 matlab   save('rsw_raw_data.mat', 'raw_data', 'ground_truth');
