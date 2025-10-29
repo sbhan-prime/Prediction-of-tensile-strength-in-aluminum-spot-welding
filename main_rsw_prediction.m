@@ -44,7 +44,6 @@ end
 
 num_samples = size(raw_data, 1);
 fprintf('  Loaded %d welding samples\n', num_samples);
-fprintf('  Each sample contains time-series signals for current, voltage, and contact voltage\n\n');
 
 %% Step 2: Feature Extraction
 fprintf('Step 2: Extracting features from time-series signals...\n');
@@ -130,14 +129,11 @@ disp(comparison_table);
 % Calculate improvement
 improvement = (results_wo_cv_filtered.rmse - results_w_cv_filtered.rmse) / ...
               results_wo_cv_filtered.rmse * 100;
-fprintf('\nImprovement by adding contact voltage: %.1f%% reduction in RMSE\n', improvement);
-fprintf('(Paper reported ~30%% improvement)\n\n');
 
 %% Step 6: Visualize results
 fprintf('Step 6: Generating visualization plots...\n');
 visualize_results(results_wo_cv_all, results_wo_cv_filtered, ...
                  results_w_cv_all, results_w_cv_filtered, ...
                  ground_truth, feature_names_with_cv);
-
-fprintf('\nAnalysis complete!\n');
 fprintf('==========================================================\n');
+
