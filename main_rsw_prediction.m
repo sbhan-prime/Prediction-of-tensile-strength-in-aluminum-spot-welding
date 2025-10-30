@@ -33,7 +33,7 @@ fprintf('Step 1: Loading raw time-series data...\n');
 %           current_signal, voltage_signal, contact_voltage_signal, 
 %           tensile_strength]
 % NOTE: User needs to provide actual data file
-data_file = 'rsw_raw_data_2.mat'; % User should provide this file
+data_file = 'rsw_example_data.mat'; % User should provide this file
 
 if ~exist(data_file, 'file')
     fprintf('Data file not found.');
